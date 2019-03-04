@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AuthenticationRoutingModule} from './features/authentication/authentication-routing.module';
+import { AuthenticationRoutingModule } from './features/authentication/authentication-routing.module';
+import { ResolverTestModule } from './features/resolver-test/resolver-test.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {AuthenticationRoutingModule} from './features/authentication/authenticat
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthenticationRoutingModule
+    AuthenticationRoutingModule,
+    ResolverTestModule
   ],
   providers: [],
   bootstrap: [AppComponent]
